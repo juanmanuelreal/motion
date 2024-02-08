@@ -1,0 +1,32 @@
+/* Change h1 color */
+h1{
+   /* Use cadetblue color */     
+   color: cadetblue;
+   font-size: 40px;
+   text-align: center;
+}
+
+h2 {
+   text-align: center;
+}
+
+.bar {
+   border-bottom: solid 1px;
+   margin-bottom: 50px;
+}
+
+.bar_items {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+/* Change h2 color */
+h2{
+   /* Use cadetblue color */     color: cadetblue;
+}
+
+/* Change h4 color */
+h4{
+   /* Use cadetblue color */     color: cadetblue;
+}

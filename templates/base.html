@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+    {% endblock %}
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Motion Prod</h1>
+        </div>
+        <div class="bar">
+            <ul class="bar_items">
+                <li><a href="/login">Login</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    {% block main %}
+    {% endblock %}
+    <footer>
+        All rights reserved {{ name }}
+    </footer>   
+</body>
+</html>
