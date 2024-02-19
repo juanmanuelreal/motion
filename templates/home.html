@@ -8,19 +8,24 @@
 {% endblock %}
 
 {% block main %}
-    <mian>
-        <div>
-            <h2>Posts:</h2>
+    
+<div>
+    <h2>Posts:</h2>
+</div>
+<form action="/">
+    <input type="search" id="search" name="search"><br>
+    <button type="submit">Search</button>
+</form>
+{% if post %}
+    {% for post in post %}
+        <div class="posts">
+            <h4>Title: {{ post.title }}</h4>
+            <p>Author of post: {{ post.author }}</p>
+            <a href="/post/{{post.id}}">Read more...</a>
         </div>
-        {% if posts %}
-            {% for post in posts %}
-                <div>
-                    <h4 >Author of post: {{ post.author }}</h3>
-                    <p>{{ post.text }}</p>
-                </div>
-            {% endfor %}
-        {% else  %}
-            <p>Not available right now.</p>
-        {% endif  %}
-    </mian>
+    {% endfor %}
+{% else  %}
+    <p>Not available right now.</p>
+{% endif  %}
+    
 {% endblock %}

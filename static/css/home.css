@@ -21,6 +21,14 @@ h2 {
     justify-content: space-around;
 }
 
+.posts {
+    box-shadow: 10px 10px 5px 10px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 10px rgba(0,0,0,0.75);
+    margin: 40px 20px 20px 20px;
+    padding: 10px;
+}
+
 /* Change h2 color */
 h2{
    /* Use cadetblue color */     color: cadetblue;
