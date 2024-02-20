@@ -10,11 +10,11 @@
 {% block main %}
     
     <div>
-        <h3>Title: {{ post.title }}</h3>
-        <p>Author: {{ post.author }}</p>
+        <h3>Title: {{ post[2] }} </h3><br/>
+        <p>Author: {{ post[1] }}</p>
     </div>
     <div>
-        <p>{{ post.text }}</p>
+        <p>{{ post[3] }}</p>
     </div>
     <a href="/">Back</a>      
 {% endblock %}

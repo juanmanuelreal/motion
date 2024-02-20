@@ -11,9 +11,10 @@
         </div>
         <div class="bar">
             <ul class="bar_items">
-                <li><a href="/login">Login</a></li>
-                <li><a href="/post">Create Post</a></li>
-                <li><a href="/contact">Contact</a></li>
+                <li><a href={{ url_for('home')  }}>Home</a></li>
+                <li><a href={{ url_for('login')  }}>Login</a></li>
+                <li><a href={{ url_for('create_post')  }}>Create Post</a></li>
+                <li><a href={{ url_for('contact')  }}>Contact</a></li>
             </ul>
         </div> 
     </header>

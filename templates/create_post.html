@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/home.css') }}">
-    <title>Login</title>
+    <title>Post</title>
 {% endblock %}
 
 {% block main %}
@@ -16,12 +16,14 @@
     <title>Formulario de Ejemplo</title>
 </head>
 <body>
-    <h3>Login:</h3>
-    <form action="/login" method="post">
-        <label for="username">Username:</label><br>
-        <input type="text" id="username" name="username"><br>
-        <label for="password">Password:</label><br>
-        <input type="password" id="password" name="password"><br>
+    <h3>Create Post:</h3>
+    <form action="/post" method="post">
+        <label for="author">Author:</label><br>
+        <input type="text" id="author" name="author"><br>
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title"><br>
+        <label for="text">Text of post:</label><br>
+        <input type="text" id="text" name="text"><br>
         <input type="submit" value="Send">
     </form>
     <p style="color: red;" >{{error}}</p>
