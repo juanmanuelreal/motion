@@ -8,23 +8,16 @@
 {% endblock %}
 
 {% block main %}
-    <mian>
-        <!DOCTYPE html>
-        <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Formulario de Ejemplo</title>
-</head>
-<body>
     <h3>Login:</h3>
     <form action="/login" method="post">
         <label for="username">Username:</label><br>
-        <input type="text" id="username" name="username"><br>
+        <input type="text" id="username" name="username", required="true"><br>
         <label for="password">Password:</label><br>
-        <input type="password" id="password" name="password"><br>
+        <input type="password" id="password" name="password", required="true"><br>
         <input type="submit" value="Send">
     </form>
     <p style="color: red;" >{{error}}</p>
+    <p>Register here... <a href={{ url_for('register') }}>aqui</a></p>
 </body>
 </html>
     </mian>

@@ -1,10 +1,10 @@
-# Importamos libreria
+# Import library
 import sqlite3
 
-# Crear conexión
+# Create connection
 connection = sqlite3.connect('motion.db')
 
-# Crear cursor
+# Create cursor
 cur = connection.cursor()
 
 cur.execute("""CREATE TABLE users (
@@ -20,8 +20,8 @@ cur.execute("""CREATE TABLE posts (
     text TEXT NOT NULL
 )""")
 
-# Confirmar cambios
+# Confirm changes
 connection.commit()
 
-# Cerrar la conexión
+# Close connection
 connection.close()

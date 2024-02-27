@@ -12,16 +12,16 @@
 <div>
     <h2>Posts:</h2>
 </div>
-<form action="/">
+<form action="{{ url_for('home')  }}">
     <input type="search" id="search" name="search"><br>
     <button type="submit">Search</button>
 </form>
-{% if post %}
-    {% for post in post %}
+{% if posts %}
+    {% for post in posts %}
         <div class="posts">
-            <h4>Title: {{ post[2] }} </h4><br>
-            <p>Author of post: {{ post[1] }} </p>
-            <a href="/post/{{post[0]}}">Read more...</a>
+            <h4>Title: {{ post.title }} </h4><br>
+            <p>Author of post: {{ post.author }} </p>
+            <a href="/post/{{post.id}}">Read more...</a>
         </div>
     {% endfor %}
 {% else  %}
